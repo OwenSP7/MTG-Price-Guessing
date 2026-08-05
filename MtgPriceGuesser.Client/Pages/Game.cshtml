@@ -1,0 +1,36 @@
+﻿@page
+@model GameModel
+@{
+    ViewData["Title"] = "Game";
+}
+
+<div class="text-center">
+    <h1 class="game-title">Which card is more expensive?</h1>
+    <p class="score-display">Score: 0</p>
+
+    <div class="row justify-content-center">
+        <div class="col-md-5 mb-4">
+            <div class="card bg-dark text-white border-light">
+                <img src="@Model.CardA.ImageUrl" class="card-img-top mx-auto mt-3" style="max-width: 250px;" alt="@Model.CardA.Name" />
+                <div class="card-body">
+                    <h5 class="card-title">@Model.CardA.Name</h5>
+                    <button class="btn btn-primary" disabled>This one is pricier</button>
+                    <p>Price: ???</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-5 mb-4">
+            <div class="card bg-dark text-white border-light">
+                <img src="@Model.CardB.ImageUrl" class="card-img-top mx-auto mt-3" style="max-width: 250px;" alt="@Model.CardB.Name" />
+                <div class="card-body">
+                    <h5 class="card-title">@Model.CardB.Name</h5>
+                    <button class="btn btn-primary" disabled>This one is pricier</button>
+                    <p>Price: ???</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a class="btn btn-secondary mt-3" href="/">Back to Menu</a>
+</div>
