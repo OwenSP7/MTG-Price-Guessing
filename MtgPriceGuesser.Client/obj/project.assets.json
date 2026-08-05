@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\owenp\\Documents\\GitHub\\SE383.58\\MtgPriceGuesser.Client\\MtgPriceGuesser.Client.csproj",
+      "projectUniqueName": "C:\\Users\\owenp\\Documents\\GitHub\\MTG-Price-Guessing\\MtgPriceGuesser.Client\\MtgPriceGuesser.Client.csproj",
       "projectName": "MtgPriceGuesser.Client",
-      "projectPath": "C:\\Users\\owenp\\Documents\\GitHub\\SE383.58\\MtgPriceGuesser.Client\\MtgPriceGuesser.Client.csproj",
+      "projectPath": "C:\\Users\\owenp\\Documents\\GitHub\\MTG-Price-Guessing\\MtgPriceGuesser.Client\\MtgPriceGuesser.Client.csproj",
       "packagesPath": "C:\\Users\\owenp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\owenp\\Documents\\GitHub\\SE383.58\\MtgPriceGuesser.Client\\obj\\",
+      "outputPath": "C:\\Users\\owenp\\Documents\\GitHub\\MTG-Price-Guessing\\MtgPriceGuesser.Client\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
