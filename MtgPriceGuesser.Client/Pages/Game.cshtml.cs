@@ -1,23 +1,66 @@
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Text.Json;
 
 namespace MtgPriceGuesser.Client.Pages
 {
     public class GameModel : PageModel
     {
-        public CardInfo CardA { get; set; } = new CardInfo
-        {
-            Name = "Vincent Valentine",
-            ImageUrl = "https://cards.scryfall.io/display/front/1/5/15ea1113-7360-462d-91b8-22d5110cbf5a.webp?1783906452"
-        };
+        private readonly IHttpClientFactory _httpClientFactory;
 
-        public CardInfo CardB { get; set; } = new CardInfo
+        public GameModel(IHttpClientFactory httpClientFactory)
         {
-            Name = "NOT A WOLF",
-            ImageUrl = "https://cards.scryfall.io/display/front/5/4/54c92a0d-ab6e-45b2-b7a8-e13a5dd4e74e.webp?1783911045"
-        };
+            _httpClientFactory = httpClientFactory;
+        }
 
-        public void OnGet()
+        public CardInfo CardA { get; set; } = new CardInfo();
+        public CardInfo CardB { get; set; } = new CardInfo();
+
+        public bool HasGuessed { get; set; } = false;
+        public bool WasCorrect { get; set; } = false;
+
+        public async Task OnGetAsync()
         {
+            await LoadNewPair();
+        }
+
+        public async Task<IActionResult> OnPostGuessAsync(
+            string chosenCard,
+            string cardAName, string cardBName,
+            decimal cardAPrice, decimal cardBPrice,
+            string cardAImage, string cardBImage,
+            string? cardABackImage, string? cardBBackImage)
+        {
+            CardA = new CardInfo { Name = cardAName, ImageUrl = cardAImage, BackImageUrl = cardABackImage, Price = cardAPrice };
+            CardB = new CardInfo { Name = cardBName, ImageUrl = cardBImage, BackImageUrl = cardBBackImage, Price = cardBPrice };
+
+            HasGuessed = true;
+
+            bool aIsPricier = CardA.Price >= CardB.Price;
+            WasCorrect = (chosenCard == "A" && aIsPricier) || (chosenCard == "B" && !aIsPricier);
+
+            return Page();
+        }
+
+        private async Task LoadNewPair()
+        {
+            var client = _httpClientFactory.CreateClient("Api");
+
+            var response = await client.GetAsync("api/cards/random-pair");
+            response.EnsureSuccessStatusCode();
+
+            var json = await response.Content.ReadAsStringAsync();
+
+            var cards = JsonSerializer.Deserialize<List<CardInfo>>(json, new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            });
+
+            if (cards != null && cards.Count == 2)
+            {
+                CardA = cards[0];
+                CardB = cards[1];
+            }
         }
     }
 
@@ -25,5 +68,7 @@ namespace MtgPriceGuesser.Client.Pages
     {
         public string Name { get; set; } = string.Empty;
         public string ImageUrl { get; set; } = string.Empty;
+        public string? BackImageUrl { get; set; }
+        public decimal Price { get; set; }
     }
 }
