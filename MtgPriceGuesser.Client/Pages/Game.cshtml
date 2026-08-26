@@ -7,9 +7,38 @@
 <div class="text-center">
     <h1 class="game-title">Which card is more expensive?</h1>
 
-    @if (!Model.HasGuessed)
+    @if (Model.IsGameOver)
     {
+        <p class="score-display">💀 Game Over</p>
+        <p class="score-display">Final Score: @Model.Score</p>
+        <p class="score-display">Net Worth Identified: $@Model.NetWorth</p>
+
+        @if (!Model.ScoreSubmitted)
+        {
+            <form method="post" asp-page-handler="SubmitScore">
+                <input type="hidden" name="finalScore" value="@Model.Score" />
+                <input type="hidden" name="finalNetWorth" value="@Model.NetWorth" />
+
+                <input type="text" name="playerName" maxlength="20" placeholder="Enter your name" class="form-control w-25 mx-auto mb-2" required />
+                <button type="submit" class="btn btn-primary">Submit Score</button>
+            </form>
+        }
+        else
+        {
+            <p class="score-display">✅ Score submitted!</p>
+        }
+
+        <a class="btn btn-primary mt-3" href="/Game">Play Again</a>
+    }
+    else if (!Model.HasGuessed)
+    {
+        <p class="score-display">Score: @Model.Score &nbsp; | &nbsp; Health: @Model.Health</p>
+
         <form method="post" asp-page-handler="Guess">
+            <input type="hidden" name="currentScore" value="@Model.Score" />
+            <input type="hidden" name="currentHealth" value="@Model.Health" />
+            <input type="hidden" name="currentNetWorth" value="@Model.NetWorth" />
+
             <input type="hidden" name="cardAName" value="@Model.CardA.Name" />
             <input type="hidden" name="cardAImage" value="@Model.CardA.ImageUrl" />
             <input type="hidden" name="cardABackImage" value="@Model.CardA.BackImageUrl" />
@@ -62,7 +91,7 @@
     else
     {
         <p class="score-display">
-            @(Model.WasCorrect ? "✅ Correct!" : "❌ Wrong!")
+            @(Model.WasCorrect ? "✅ Correct!" : "❌ Wrong!") &nbsp; | &nbsp; Score: @Model.Score &nbsp; | &nbsp; Health: @Model.Health
         </p>
 
         <div class="row justify-content-center">
@@ -88,6 +117,9 @@
         </div>
 
         <form method="get">
+            <input type="hidden" name="score" value="@Model.Score" />
+            <input type="hidden" name="health" value="@Model.Health" />
+            <input type="hidden" name="netWorth" value="@Model.NetWorth" />
             <button type="submit" class="btn btn-primary mt-3">Next Round</button>
         </form>
     }

@@ -20,6 +20,52 @@
     ]
   },
   {
+    "ContainingType": "MtgPriceGuesser.Api.Controllers.HighScoresController",
+    "Method": "GetTopScores",
+    "RelativePath": "api/HighScores",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MtgPriceGuesser.Api.Models.HighScore, MtgPriceGuesser.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MtgPriceGuesser.Api.Controllers.HighScoresController",
+    "Method": "SubmitScore",
+    "RelativePath": "api/HighScores",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newScore",
+        "Type": "MtgPriceGuesser.Api.Models.HighScore",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MtgPriceGuesser.Api.Models.HighScore",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "MtgPriceGuesser.Api.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

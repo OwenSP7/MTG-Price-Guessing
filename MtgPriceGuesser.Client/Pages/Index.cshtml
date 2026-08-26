@@ -18,12 +18,27 @@
                 <tr>
                     <th>Name</th>
                     <th>Score</th>
+                    <th>Net Worth</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td colspan="2">No high scores yet</td>
-                </tr>
+                @if (Model.TopScores.Count == 0)
+                {
+                    <tr>
+                        <td colspan="3">No high scores yet</td>
+                    </tr>
+                }
+                else
+                {
+                    @foreach (var score in Model.TopScores)
+                    {
+                        <tr>
+                            <td>@score.PlayerName</td>
+                            <td>@score.Score</td>
+                            <td>$@score.NetWorth</td>
+                        </tr>
+                    }
+                }
             </tbody>
         </table>
     </div>
