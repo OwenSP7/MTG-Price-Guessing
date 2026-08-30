@@ -3,38 +3,41 @@
   "WorkspaceRootPath": "C:\\Users\\owenp\\Documents\\GitHub\\MTG-Price-Guessing\\MtgPriceGuesser.Client\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{994E909E-511A-B06D-5A74-67B2E6B356FE}|..\\MtgPriceGuesser.Api\\MtgPriceGuesser.Api.csproj|c:\\users\\owenp\\documents\\github\\mtg-price-guessing\\mtgpriceguesser.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{994E909E-511A-B06D-5A74-67B2E6B356FE}|..\\MtgPriceGuesser.Api\\MtgPriceGuesser.Api.csproj|c:\\users\\owenp\\documents\\github\\mtg-price-guessing\\mtgpriceguesser.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{994E909E-511A-B06D-5A74-67B2E6B356FE}|..\\MtgPriceGuesser.Api\\MtgPriceGuesser.Api.csproj|c:\\users\\owenp\\documents\\github\\mtg-price-guessing\\mtgpriceguesser.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{994E909E-511A-B06D-5A74-67B2E6B356FE}|..\\MtgPriceGuesser.Api\\MtgPriceGuesser.Api.csproj|c:\\users\\owenp\\documents\\github\\mtg-price-guessing\\mtgpriceguesser.api\\models\\highscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C3DE4E2-2487-42BC-B7CE-8F50AF667CF3}|MtgPriceGuesser.Client.csproj|c:\\users\\owenp\\documents\\github\\mtg-price-guessing\\mtgpriceguesser.client\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C3DE4E2-2487-42BC-B7CE-8F50AF667CF3}|MtgPriceGuesser.Client.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2C3DE4E2-2487-42BC-B7CE-8F50AF667CF3}|MtgPriceGuesser.Client.csproj|c:\\users\\owenp\\documents\\github\\mtg-price-guessing\\mtgpriceguesser.client\\pages\\game.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2C3DE4E2-2487-42BC-B7CE-8F50AF667CF3}|MtgPriceGuesser.Client.csproj|solutionrelative:pages\\game.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2C3DE4E2-2487-42BC-B7CE-8F50AF667CF3}|MtgPriceGuesser.Client.csproj|c:\\users\\owenp\\documents\\github\\mtg-price-guessing\\mtgpriceguesser.client\\pages\\game.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C3DE4E2-2487-42BC-B7CE-8F50AF667CF3}|MtgPriceGuesser.Client.csproj|solutionrelative:pages\\game.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{994E909E-511A-B06D-5A74-67B2E6B356FE}|..\\MtgPriceGuesser.Api\\MtgPriceGuesser.Api.csproj|c:\\users\\owenp\\documents\\github\\mtg-price-guessing\\mtgpriceguesser.api\\controllers\\cardscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{994E909E-511A-B06D-5A74-67B2E6B356FE}|..\\MtgPriceGuesser.Api\\MtgPriceGuesser.Api.csproj|c:\\users\\owenp\\documents\\github\\mtg-price-guessing\\mtgpriceguesser.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{994E909E-511A-B06D-5A74-67B2E6B356FE}|..\\MtgPriceGuesser.Api\\MtgPriceGuesser.Api.csproj|c:\\users\\owenp\\documents\\github\\mtg-price-guessing\\mtgpriceguesser.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{994E909E-511A-B06D-5A74-67B2E6B356FE}|..\\MtgPriceGuesser.Api\\MtgPriceGuesser.Api.csproj|c:\\users\\owenp\\documents\\github\\mtg-price-guessing\\mtgpriceguesser.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{994E909E-511A-B06D-5A74-67B2E6B356FE}|..\\MtgPriceGuesser.Api\\MtgPriceGuesser.Api.csproj|c:\\users\\owenp\\documents\\github\\mtg-price-guessing\\mtgpriceguesser.api\\migrations\\20260826171134_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{994E909E-511A-B06D-5A74-67B2E6B356FE}|..\\MtgPriceGuesser.Api\\MtgPriceGuesser.Api.csproj|c:\\users\\owenp\\documents\\github\\mtg-price-guessing\\mtgpriceguesser.api\\models\\highscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{994E909E-511A-B06D-5A74-67B2E6B356FE}|..\\MtgPriceGuesser.Api\\MtgPriceGuesser.Api.csproj|c:\\users\\owenp\\documents\\github\\mtg-price-guessing\\mtgpriceguesser.api\\models\\carddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C3DE4E2-2487-42BC-B7CE-8F50AF667CF3}|MtgPriceGuesser.Client.csproj|c:\\users\\owenp\\documents\\github\\mtg-price-guessing\\mtgpriceguesser.client\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2C3DE4E2-2487-42BC-B7CE-8F50AF667CF3}|MtgPriceGuesser.Client.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2C3DE4E2-2487-42BC-B7CE-8F50AF667CF3}|MtgPriceGuesser.Client.csproj|c:\\users\\owenp\\documents\\github\\mtg-price-guessing\\mtgpriceguesser.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C3DE4E2-2487-42BC-B7CE-8F50AF667CF3}|MtgPriceGuesser.Client.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C3DE4E2-2487-42BC-B7CE-8F50AF667CF3}|MtgPriceGuesser.Client.csproj|c:\\users\\owenp\\documents\\github\\mtg-price-guessing\\mtgpriceguesser.client\\pages\\game.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C3DE4E2-2487-42BC-B7CE-8F50AF667CF3}|MtgPriceGuesser.Client.csproj|solutionrelative:pages\\game.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2C3DE4E2-2487-42BC-B7CE-8F50AF667CF3}|MtgPriceGuesser.Client.csproj|c:\\users\\owenp\\documents\\github\\mtg-price-guessing\\mtgpriceguesser.client\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -48,11 +51,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
+              "Title": "20260826171134_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\owenp\\Documents\\GitHub\\MTG-Price-Guessing\\MtgPriceGuesser.Api\\Migrations\\20260826171134_InitialCreate.cs",
+              "RelativeDocumentMoniker": "..\\MtgPriceGuesser.Api\\Migrations\\20260826171134_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\owenp\\Documents\\GitHub\\MTG-Price-Guessing\\MtgPriceGuesser.Api\\Migrations\\20260826171134_InitialCreate.cs",
+              "RelativeToolTip": "..\\MtgPriceGuesser.Api\\Migrations\\20260826171134_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T17:11:34.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\owenp\\Documents\\GitHub\\MTG-Price-Guessing\\MtgPriceGuesser.Api\\appsettings.json",
               "RelativeDocumentMoniker": "..\\MtgPriceGuesser.Api\\appsettings.json",
@@ -65,7 +81,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\owenp\\Documents\\GitHub\\MTG-Price-Guessing\\MtgPriceGuesser.Api\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "..\\MtgPriceGuesser.Api\\Data\\AppDbContext.cs",
@@ -78,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\owenp\\Documents\\GitHub\\MTG-Price-Guessing\\MtgPriceGuesser.Api\\Program.cs",
               "RelativeDocumentMoniker": "..\\MtgPriceGuesser.Api\\Program.cs",
@@ -91,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "HighScore.cs",
               "DocumentMoniker": "C:\\Users\\owenp\\Documents\\GitHub\\MTG-Price-Guessing\\MtgPriceGuesser.Api\\Models\\HighScore.cs",
               "RelativeDocumentMoniker": "..\\MtgPriceGuesser.Api\\Models\\HighScore.cs",
@@ -99,51 +115,50 @@
               "RelativeToolTip": "..\\MtgPriceGuesser.Api\\Models\\HighScore.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-26T16:54:26.224Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-26T16:54:26.224Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Game.cshtml",
               "DocumentMoniker": "C:\\Users\\owenp\\Documents\\GitHub\\MTG-Price-Guessing\\MtgPriceGuesser.Client\\Pages\\Game.cshtml",
               "RelativeDocumentMoniker": "Pages\\Game.cshtml",
               "ToolTip": "C:\\Users\\owenp\\Documents\\GitHub\\MTG-Price-Guessing\\MtgPriceGuesser.Client\\Pages\\Game.cshtml",
               "RelativeToolTip": "Pages\\Game.cshtml",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAABoAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-08-05T02:54:12.288Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "Game.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\owenp\\Documents\\GitHub\\MTG-Price-Guessing\\MtgPriceGuesser.Client\\Pages\\Game.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Game.cshtml.cs",
               "ToolTip": "C:\\Users\\owenp\\Documents\\GitHub\\MTG-Price-Guessing\\MtgPriceGuesser.Client\\Pages\\Game.cshtml.cs",
               "RelativeToolTip": "Pages\\Game.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAmwEEAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-05T03:00:24.871Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "CardsController.cs",
               "DocumentMoniker": "C:\\Users\\owenp\\Documents\\GitHub\\MTG-Price-Guessing\\MtgPriceGuesser.Api\\Controllers\\CardsController.cs",
               "RelativeDocumentMoniker": "..\\MtgPriceGuesser.Api\\Controllers\\CardsController.cs",
               "ToolTip": "C:\\Users\\owenp\\Documents\\GitHub\\MTG-Price-Guessing\\MtgPriceGuesser.Api\\Controllers\\CardsController.cs",
               "RelativeToolTip": "..\\MtgPriceGuesser.Api\\Controllers\\CardsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwGYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-09T16:49:53.095Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "CardDto.cs",
               "DocumentMoniker": "C:\\Users\\owenp\\Documents\\GitHub\\MTG-Price-Guessing\\MtgPriceGuesser.Api\\Models\\CardDto.cs",
               "RelativeDocumentMoniker": "..\\MtgPriceGuesser.Api\\Models\\CardDto.cs",
@@ -151,12 +166,11 @@
               "RelativeToolTip": "..\\MtgPriceGuesser.Api\\Models\\CardDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-09T18:01:35.371Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-09T18:01:35.371Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\owenp\\Documents\\GitHub\\MTG-Price-Guessing\\MtgPriceGuesser.Client\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -164,12 +178,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-09T16:24:25.668Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-09T16:24:25.668Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\owenp\\Documents\\GitHub\\MTG-Price-Guessing\\MtgPriceGuesser.Client\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
@@ -177,12 +190,11 @@
               "RelativeToolTip": "wwwroot\\css\\site.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-08-05T02:58:04.733Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-05T02:58:04.733Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\owenp\\Documents\\GitHub\\MTG-Price-Guessing\\MtgPriceGuesser.Client\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml",

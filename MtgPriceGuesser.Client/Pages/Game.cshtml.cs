@@ -63,7 +63,7 @@ namespace MtgPriceGuesser.Client.Pages
             }
             else
             {
-                Health -= pricierCardValue;
+                Health -= 5 + pricierCardValue;
             }
 
             if (Health <= 0)
