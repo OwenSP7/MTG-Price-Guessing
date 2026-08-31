@@ -5,7 +5,8 @@ builder.Services.AddRazorPages();
 
 builder.Services.AddHttpClient("Api", client =>
 {
-    client.BaseAddress = new Uri("https://localhost:7202/"); 
+    var apiBaseUrl = Environment.GetEnvironmentVariable("API_BASE_URL") ?? "https://localhost:7202/";
+    client.BaseAddress = new Uri(apiBaseUrl);
 });
 
 var app = builder.Build();

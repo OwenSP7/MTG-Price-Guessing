@@ -1,0 +1,40 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: mtg-sqlserver
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=YourStrong!Passw0rd
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+
+  api:
+    build:
+      context: ./MtgPriceGuesser.Api
+      dockerfile: Dockerfile
+    container_name: mtg-api
+    depends_on:
+      - sqlserver
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_URLS=http://+:8080
+      - ConnectionStrings__DefaultConnection=Server=sqlserver;Database=MtgPriceGuesserDb;User Id=sa;Password=YourStrong!Passw0rd;TrustServerCertificate=True
+
+  client:
+    build:
+      context: ./MtgPriceGuesser.Client
+      dockerfile: Dockerfile
+    container_name: mtg-client
+    depends_on:
+      - api
+    ports:
+      - "8081:8080"
+    environment:
+      - ASPNETCORE_URLS=http://+:8080
+      - API_BASE_URL=http://api:8080/
+
+volumes:
+  sqlserver_data:

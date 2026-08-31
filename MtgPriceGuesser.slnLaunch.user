@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "MtgPriceGuesser.Client\\MtgPriceGuesser.Client.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "MtgPriceGuesser.Api\\MtgPriceGuesser.Api.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
