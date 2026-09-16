@@ -48,7 +48,7 @@ namespace MtgPriceGuesser.Client.Pages
             HasGuessed = true;
 
             bool aIsPricier = CardA.Price >= CardB.Price;
-            WasCorrect = (chosenCard == "A" && aIsPricier) || (chosenCard == "B" && !aIsPricier);
+            WasCorrect = CheckGuessCorrect(chosenCard, CardA.Price, CardB.Price);
 
             decimal pricierCardValue = aIsPricier ? CardA.Price : CardB.Price;
 
@@ -93,6 +93,9 @@ namespace MtgPriceGuesser.Client.Pages
                 CardA = cards[0];
                 CardB = cards[1];
             }
+
+
+
         }
 
         public async Task<IActionResult> OnPostSubmitScoreAsync(string playerName, int finalScore, decimal finalNetWorth)
@@ -119,6 +122,14 @@ namespace MtgPriceGuesser.Client.Pages
 
             return Page();
         }
+
+
+        public static bool CheckGuessCorrect(string chosenCard, decimal priceA, decimal priceB)
+        {
+            bool aIsPricier = priceA >= priceB;
+            return (chosenCard == "A" && aIsPricier) || (chosenCard == "B" && !aIsPricier);
+        }
+
     }
 
 
@@ -130,4 +141,8 @@ namespace MtgPriceGuesser.Client.Pages
         public string? BackImageUrl { get; set; }
         public decimal Price { get; set; }
     }
+
+
+
+
 }

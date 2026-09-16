@@ -1,0 +1,52 @@
+name: Build and test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+env:
+  DOTNET_VERSION: "8.0.x"
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Restore
+        run: dotnet restore MtgPriceGuesser.sln
+
+      - name: Build
+        run: dotnet build MtgPriceGuesser.sln -c Release --no-restore
+
+  unit-tests:
+    name: xUnit tests
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Restore
+        run: dotnet restore MtgPriceGuesser.sln
+
+      - name: Build
+        run: dotnet build MtgPriceGuesser.sln -c Release --no-restore
+
+      - name: Test frontend
+        run: dotnet test MtgPriceGuesser.Client.Tests/MtgPriceGuesser.Client.Tests.csproj -c Release --no-build --verbosity normal
+
+      - name: Test backend
+        run: dotnet test MtgPriceGuesser.Api.Tests/MtgPriceGuesser.Api.Tests.csproj -c Release --no-build --verbosity normal

@@ -97,6 +97,10 @@ namespace MtgPriceGuesser.Api.Controllers
 
             throw new Exception("Could not find a valid priced card after multiple attempts.");
         }
+        public static bool HasValidPrice(string? priceString)
+        {
+            return decimal.TryParse(priceString, out var price) && price > 0;
+        }
     }
 }
 
