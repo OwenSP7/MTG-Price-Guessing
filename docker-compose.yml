@@ -17,8 +17,6 @@ services:
     container_name: mtg-api
     depends_on:
       - sqlserver
-    ports:
-      - "8080:8080"
     environment:
       - ASPNETCORE_URLS=http://+:8080
       - ConnectionStrings__DefaultConnection=Server=sqlserver;Database=MtgPriceGuesserDb;User Id=sa;Password=YourStrong!Passw0rd;TrustServerCertificate=True
@@ -31,7 +29,7 @@ services:
     depends_on:
       - api
     ports:
-      - "8081:8080"
+      - "89:8080"
     environment:
       - ASPNETCORE_URLS=http://+:8080
       - API_BASE_URL=http://api:8080/
