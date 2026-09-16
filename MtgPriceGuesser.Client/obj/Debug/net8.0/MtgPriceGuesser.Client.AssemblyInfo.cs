@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MtgPriceGuesser.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1876bfec860666330c5b817c176907ddaa4485cc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7566c54d59c533489b1bbc8c4dba1bb901dbc981")]
 [assembly: System.Reflection.AssemblyProductAttribute("MtgPriceGuesser.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MtgPriceGuesser.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
